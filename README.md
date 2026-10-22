@@ -1,1 +1,1 @@
-# liodiera.github.io
+# learning-paths
