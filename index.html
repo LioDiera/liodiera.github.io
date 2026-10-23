@@ -64,6 +64,29 @@
         }
         .unit h3 { margin-top: 0; color: #333; }
         img { max-width: 100%; height: auto; }
+        div.NOTE, div.IMPORTANT, div.TIP, div.WARNING, div.CAUTION {
+            margin: 1em 0;
+            padding: 0.6em 1em;
+            border-left: 5px solid #0078d4;
+            background: #eff6fc;
+            break-inside: avoid;
+        }
+        div.NOTE > p:first-child, div.IMPORTANT > p:first-child, div.TIP > p:first-child,
+        div.WARNING > p:first-child, div.CAUTION > p:first-child {
+            margin: 0 0 0.3em 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 0.03em;
+        }
+        div.NOTE { border-left-color: #0078d4; background: #eff6fc; }
+        div.NOTE > p:first-child { color: #0063b1; }
+        div.IMPORTANT { border-left-color: #d83b01; background: #fdf3ee; }
+        div.IMPORTANT > p:first-child { color: #a62d01; }
+        div.TIP { border-left-color: #107c10; background: #f1f9f1; }
+        div.TIP > p:first-child { color: #0b5a0b; }
+        div.WARNING, div.CAUTION { border-left-color: #c50f1f; background: #fdf0f1; }
+        div.WARNING > p:first-child, div.CAUTION > p:first-child { color: #a80000; }
         code {
             background: #f4f4f4;
             padding: 0.2rem 0.4rem;
@@ -100,7 +123,7 @@
             <div class="metadata">
                 <span>Duration: 0 minutes</span>
                 <span>Modules: 0</span>
-                <span>Generated: 2026-10-21 11:14</span>
+                <span>Generated: 2026-10-23 08:34</span>
             </div>
         </header>
         
@@ -430,7 +453,7 @@
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>You must run a setup program to install Microsoft Entra Connect Sync. Because of the ever changing nature of the cloud, it's important to <a data-linktype="external" href="https://aka.ms/edx-cld243x-aad?azure-portal=true">download the latest version</a> of the setup program when you're ready to run it. The setup program initiates a Microsoft Entra Connect Sync installation wizard. The wizard gives you the option of installing Microsoft Entra Connect Sync using one of two setup modes: Express or Custom. The following sections examine each of these setup options.</p>
 <h3 id="microsoft-entra-connect-sync-express-setup">Microsoft Entra Connect Sync Express setup</h3>
 <p>Express Settings is the default setup option when installing Microsoft Entra Connect Sync because it supports the most common installation scenario. When an organization runs Express setup, Microsoft Entra Connect Sync deploys synchronization with the password hash synchronization (PHS) option. This option is for a single forest only. By using PHS, organizations can synchronize password hashes to Microsoft Entra ID while retaining full control over password policies and resets on the on-premises infrastructure.</p>
@@ -667,7 +690,7 @@
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>Organizations must complete the following prerequisites before installing Microsoft Entra Connect Cloud Sync:</p>
 <ul>
 <li>Create the Microsoft Entra Connect Cloud Sync gMSA (group Managed Service Account) to run the agent service.</li>
@@ -925,7 +948,7 @@
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>Choose the best response for each of the following questions.</p>
 </div>
 <h2 aria-hidden="true" hidden="" id="quiz-title">Check your knowledge</h2>
@@ -1016,7 +1039,7 @@
 <p>Protecting users' identity by monitoring their usage and sign-in patterns ensures a secure cloud solution. Explore how to design and implement Microsoft Entra Identity Protection.</p>
 <h3 id="watch-this-video">Watch this video</h3>
 <p>In this video, get a high-level overview of Identity Protection, a feature of Microsoft Entra ID. You learn about different types of detections, risks, and risk policies that exist in Identity Protection. The video explains the benefits of the risk policies, recent UX enhancements, powerful APIs, improved risk assessment, and overall alignment along risky users and risky sign-ins.</p>
-<div class="embeddedvideo"><iframe allowfullscreen="true" data-linktype="external" frameborder="0" src="https://learn-video.azurefd.net/vod/player?id=0266c208-6909-4ac4-8c70-219f866d5390"></iframe></div>
+<p><a href="https://learn-video.azurefd.net/vod/player?id=0266c208-6909-4ac4-8c70-219f866d5390">Watch the video: https://learn-video.azurefd.net/vod/player?id=0266c208-6909-4ac4-8c70-219f866d5390</a></p>
 <h2 id="learning-objectives">Learning objectives</h2>
 <p>In this module, you will:</p>
 <ul>
@@ -1271,7 +1294,7 @@
 <p>Both policies work to automate the response to risk detections in your environment and allow users to self-remediate when risk is detected.</p>
 <h3 id="watch-the-video">Watch the video</h3>
 <p>In this video, learn how to deploy Microsoft Entra Identity Protection by configuring risk-based policies (user risk and sign-in risk) in your organization. You also learn best practices on how to gradually roll out these policies and MFA registration in your organization.</p>
-<div class="embeddedvideo"><iframe allowfullscreen="true" data-linktype="external" frameborder="0" src="https://learn-video.azurefd.net/vod/player?id=c1974080-b372-4051-8100-ad7eb5b1bfb0"></iframe></div>
+<p><a href="https://learn-video.azurefd.net/vod/player?id=c1974080-b372-4051-8100-ad7eb5b1bfb0">Watch the video: https://learn-video.azurefd.net/vod/player?id=c1974080-b372-4051-8100-ad7eb5b1bfb0</a></p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>If your organization wants to allow users to self-remediate when risks are detected, users must be registered for both self-service password reset and multifactor authentication. We recommend enabling the combined security information registration experience. Allowing users to self-remediate gets them back to a productive state more quickly without requiring administrator intervention. Administrators can still see these events and investigate them after the fact.</p>
 <h2 id="choosing-acceptable-risk-levels">Choosing acceptable risk levels</h2>
@@ -1969,7 +1992,7 @@
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>Choose the best response for each of the questions below.</p>
 </div>
 <h2 aria-hidden="true" hidden="" id="quiz-title">Check your knowledge</h2>
@@ -3030,7 +3053,7 @@
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>Choose the best response for each of the questions below.</p>
 </div>
 <h2 aria-hidden="true" hidden="" id="quiz-title">Check your knowledge</h2>
@@ -4400,7 +4423,7 @@
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>Choose the best response for each of the questions below.</p>
 </div>
 <h2 aria-hidden="true" hidden="" id="quiz-title">Check your knowledge</h2>
@@ -5536,7 +5559,7 @@ For example: Contoso can protect their services like Exchange Online and SharePo
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>Choose the best response for each of the questions.</p>
 </div>
 <h2 aria-hidden="true" hidden="" id="quiz-title">Check your knowledge</h2>
@@ -6192,7 +6215,7 @@ Another key advantage isn't needing to map between groups or names and their mea
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>Choose the best response for each of the questions below.</p>
 </div>
 <h2 aria-hidden="true" hidden="" id="quiz-title">Check your knowledge</h2>
@@ -6796,7 +6819,7 @@ Another key advantage isn't needing to map between groups or names and their mea
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>Choose the best response for each of the questions below.</p>
 </div>
 <h2 aria-hidden="true" hidden="" id="quiz-title">Check your knowledge</h2>
@@ -7716,7 +7739,7 @@ Another key advantage isn't needing to map between groups or names and their mea
 </div>
 <div aria-hidden="true" hidden="" id="module-unit-module-assessment-message-container"></div>
 <div hidden="" id="module-unit-notification-container"></div>
-<div aria-hidden="true" hidden="" id="module-unit-content">
+<div id="module-unit-content">
 <p>Choose the best response for each of the questions below.</p>
 </div>
 <h2 aria-hidden="true" hidden="" id="quiz-title">Check your knowledge</h2>
