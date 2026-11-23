@@ -295,7 +295,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
       <button class="switch" role="switch" aria-checked="false" id="piiSw"><span class="trk"></span>Redact PII</button>
     </div>
     <p class="box" id="entText" style="margin-top:10px"></p>
-    <p class="small">Illustrative sample sentence; the tags show the entity types named in the source (people, places, organizations, dates, telephone numbers, addresses).</p>
+    <p class="small">Illustrative sample sentence; the tags show common entity types (people, places, organizations, dates, telephone numbers, addresses).</p>
   </div>
   <h4>Text analysis scenarios</h4>
   <ul class="clean">
@@ -383,7 +383,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
       <li data-cat="biz">Authentication through facial recognition.</li>
       <li data-cat="auto">Robotics and self-driving vehicles.</li>
     </ul>
-    <p class="small">Grouping labels are added here only for filtering; the seven scenarios are the source's.</p>
+    <p class="small">Grouping labels are added here only for filtering.</p>
   </div>
 </article>
 
@@ -436,7 +436,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
   </div>
   <div class="widget">
     <span class="micro">Slider · Confidence threshold for a robot</span>
-    <p class="small">The source's reliability example: a vision-guided robot uses <b>probability (“confidence”) values</b> and avoids acting when confidence is below a threshold.</p>
+    <p class="small">Reliability example: a vision-guided robot uses <b>probability (“confidence”) values</b> and avoids acting when confidence is below a threshold.</p>
     <label class="ctl">Threshold: <span id="thrVal">0.80</span><input type="range" id="thr" min="0.5" max="0.99" step="0.01" value="0.8"></label>
     <div id="robotOut"></div>
   </div>
@@ -483,10 +483,10 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
     <button class="flip"><span class="front"><b>🔭 Why learn the concepts?</b></span><span class="back">Understanding today's generative AI — and how it powers a <b>new generation of AI agents</b> — helps society imagine new possibilities for AI tomorrow.</span><span class="hint">Flip</span></button>
   </div>
   <div class="mcheck">
-    <p class="q">Which statement best matches the source's view of generative AI?</p>
-    <button class="opt" data-fb="The source explicitly rejects this: there's no wizardry involved.">Its abilities can't be explained, so they're effectively magic.</button>
+    <p class="q">Which statement best describes generative AI?</p>
+    <button class="opt" data-fb="Not so: there's no wizardry involved.">Its abilities can't be explained, so they're effectively magic.</button>
     <button class="opt" data-ok data-fb="Yes — it's the application of mathematical techniques refined over years of statistics, data science and ML research.">It applies mathematical techniques refined through years of research.</button>
-    <button class="opt" data-fb="It does produce code — but the source's point is about the underlying math, and it isn't limited to code.">It's a coding tool that only produces computer code.</button>
+    <button class="opt" data-fb="It does produce code — but the key point is the underlying math, and it isn't limited to code.">It's a coding tool that only produces computer code.</button>
     <p class="fb" aria-live="polite"></p>
   </div>
 </article>
@@ -525,7 +525,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
   <p>Step one: give the model a <b>large</b> vocabulary — the latest LLMs have vocabularies of <b>hundreds of thousands of tokens</b>, built from Internet-scale training data.</p>
   <div class="callout def"><b>Tokens</b> include words, but also <b>sub-words</b> (like “un” in “unbelievable” and “unlikely”), punctuation, and other common character sequences. Training text is broken into distinct tokens and each gets a <b>unique integer identifier</b>.</div>
   <div class="widget">
-    <span class="micro">Live tokenizer · word-level, like the source's example</span>
+    <span class="micro">Live tokenizer · word-level</span>
     <label class="ctl">Type text<input type="text" id="tokIn" value="I heard a dog bark loudly at a cat"></label>
     <div class="tokens" id="tokOut" aria-live="polite"></div>
     <p class="small" id="tokNote"></p>
@@ -745,7 +745,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
   <div class="mcheck">
     <p class="q">Filtering email into “spam” and “not spam” is an example of…</p>
     <button class="opt" data-fb="Sentiment analysis is a special kind of classification about emotional tone — spam filtering is about category, not tone.">Sentiment analysis</button>
-    <button class="opt" data-ok data-fb="Correct — the source's example of text classification is spam filtering.">Text classification</button>
+    <button class="opt" data-ok data-fb="Correct — spam filtering is a classic example of text classification.">Text classification</button>
     <button class="opt" data-fb="Entity detection finds named entities; it doesn't categorize whole documents.">Entity detection</button>
     <p class="fb" aria-live="polite"></p>
   </div>
@@ -823,7 +823,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
     <ol class="clean"><li><b>TF</b>: count in the document — <code>tf(agent) = 6</code>.</li><li><b>IDF</b>: <code>idf(t) = log(N / df(t))</code> — N documents, df(t) documents containing t.</li><li><b>TF-IDF</b>: <code>tfidf(t,d) = tf(t,d) × log(N / df(t))</code>.</li></ol>
     “AI”, “Microsoft”, “agent” appear in both samples (N=2, df=2) → <code>log(2/2) = 0</code> → no discriminative weight.</div>
   <div class="widget">
-    <span class="micro">Calculator · TF-IDF (natural log, matching the source's numbers)</span>
+    <span class="micro">Calculator · TF-IDF (natural log)</span>
     <div class="row">
       <label class="ctl">tf (count in doc): <b id="tfV">3</b><input type="range" id="tf" min="0" max="10" value="3"></label>
       <label class="ctl">N (documents): <b id="nV">2</b><input type="range" id="tfN" min="1" max="20" value="2"></label>
@@ -842,7 +842,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
     <textarea id="spamIn" rows="3">Doctors hate this miracle cure! Lose weight fast with our anti-aging pills.</textarea>
     <div class="row small" style="margin-top:6px"><button class="pill" data-spam="Hi team, the meeting moves to 3pm. Please bring the quarterly report.">Normal email</button><button class="pill" data-spam="Doctors hate this miracle cure! Lose weight fast with our anti-aging pills.">Dubious email</button></div>
     <p id="spamOut" class="box" aria-live="polite"></p>
-    <p class="small">Illustration only: it counts the source's example spam phrases (“miracle cure”, “lose weight fast”, “anti-aging”). A trained model learns such frequency patterns from data.</p>
+    <p class="small">Illustration only: it counts example spam phrases (“miracle cure”, “lose weight fast”, “anti-aging”). A trained model learns such frequency patterns from data.</p>
   </div>
   <p>The same method supports <b>sentiment analysis</b>: bag-of-words provides features; the model estimates probabilities and assigns labels like “positive” or “negative”.</p>
   <div class="mcheck">
@@ -864,7 +864,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
     <li><b>Extract top-ranked sentences</b> after convergence as the summary.</li>
   </ol>
   <div class="widget">
-    <span class="micro">Live TextRank · the source's cloud-computing document</span>
+    <span class="micro">Live TextRank · a cloud-computing document</span>
     <div class="grid2">
       <svg viewBox="0 0 320 260" width="100%" id="trSvg" role="img" aria-label="Sentence similarity graph"></svg>
       <div>
@@ -874,13 +874,13 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
       </div>
     </div>
     <ol class="small" id="trSents"></ol>
-    <p class="small">Edge weights are the source's (e.g. S1↔S5 = 0.7, shares “cloud computing”). Top three are highlighted.</p>
+    <p class="small">Example edge weights (e.g. S1↔S5 = 0.7, shares “cloud computing”). Top three are highlighted.</p>
   </div>
   <div class="widget" data-tabs>
     <span class="micro">Tabs · Two kinds of summary</span>
     <div class="pills" role="tablist"><button class="pill" role="tab" data-tab="ex">Extractive</button><button class="pill" role="tab" data-tab="ab">Abstractive</button></div>
     <div data-panel="ex" role="tabpanel">Selecting the most relevant sentences: <b>no new text is generated</b> — the summary is a subset of the original. TextRank's result: “Cloud computing provides on-demand access to computing resources. Azure is Microsoft's cloud computing platform. Cloud computing enables scalability and flexibility.”</div>
-    <div data-panel="ab" role="tabpanel">Enabled by more recent semantic modelling: <b>new language is generated</b> that summarizes the source's key themes.</div>
+    <div data-panel="ab" role="tabpanel">Enabled by more recent semantic modelling: <b>new language is generated</b> that summarizes the document's key themes.</div>
   </div>
   <p>TextRank also works at the <b>word level</b> for <b>keyword extraction</b>: words are nodes, edges represent <b>co-occurrence within a fixed window</b>, and the highest-ranked words become key terms.</p>
 </article>
@@ -900,7 +900,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
     <span class="micro">Worked calculator · pick two words</span>
     <div class="row"><label class="ctl">Word A<select id="c3A"></select></label><label class="ctl">Word B<select id="c3B"></select></label></div>
     <pre class="mat" id="c3Out" aria-live="polite"></pre>
-    <p class="small">Source results: dog·cat ≈ <b>0.992</b> (high), dog·tree ≈ <b>0.333</b>, cat·tree ≈ <b>0.452</b> → “tree” is the odd one out.</p>
+    <p class="small">Results: dog·cat ≈ <b>0.992</b> (high), dog·tree ≈ <b>0.333</b>, cat·tree ≈ <b>0.452</b> → “tree” is the odd one out.</p>
   </div>
   <div class="mcheck">
     <p class="q">Of “dog”, “cat” and “tree”, which is the odd one out — and why?</p>
@@ -949,7 +949,7 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
   </div>
   <div class="widget">
     <span class="micro">Interactive · Prototype-vector classification</span>
-    <p class="small">Average the vectors of chosen words into a “document vector”, then compare with two class prototypes (built from the source's vectors: animals = mean of dog/cat/puppy/kitten; tree).</p>
+    <p class="small">Average the vectors of chosen words into a “document vector”, then compare with two class prototypes (built from the example vectors: animals = mean of dog/cat/puppy/kitten; tree).</p>
     <div class="pills" role="group" aria-label="Document words" id="protoWords"></div>
     <p class="box" id="protoOut" aria-live="polite"></p>
   </div>
@@ -1067,7 +1067,7 @@ Frame 3: [ -110.5, 43.9, 11.5, -2.9, 7.3, ... ]</pre>These vectors are the input
   </ul>
   <div class="widget">
     <span class="micro">Interactive · Probability distribution for one frame</span>
-    <div class="pills" role="group" aria-label="Frame"><button class="pill" aria-pressed="true" data-fr="42">Frame 42 (source example)</button><button class="pill" aria-pressed="false" data-fr="43">An ambiguous frame</button></div>
+    <div class="pills" role="group" aria-label="Frame"><button class="pill" aria-pressed="true" data-fr="42">Frame 42 (worked example)</button><button class="pill" aria-pressed="false" data-fr="43">An ambiguous frame</button></div>
     <div id="phBars"></div>
     <p class="small" id="phNote"></p>
   </div>
@@ -1091,7 +1091,7 @@ Frame 3: [ -110.5, 43.9, 11.5, -2.9, 7.3, ... ]</pre>These vectors are the input
     <label class="ctl">Beam width: <b id="bwVal">3</b><input type="range" id="bw" min="1" max="6" value="3"></label>
     <div id="beamOut"></div>
     <div class="barrow"><span class="small">Compute / latency</span><div class="bar"><span id="bwBar"></span></div><span class="small" id="bwPct"></span></div>
-    <p class="small">Hypothesis scores are illustrative; the winning and losing transcriptions are the source's.</p>
+    <p class="small">Hypothesis scores are illustrative.</p>
   </div>
   <div class="callout caution">Decoding is computationally intensive. Real-time apps balance accuracy and latency by <b>limiting beam width and hypothesis depth</b>.</div>
   <h4>6 · Post-processing: refine the output</h4>
@@ -1171,7 +1171,7 @@ Frame 3: [ -110.5, 43.9, 11.5, -2.9, 7.3, ... ]</pre>These vectors are the input
     <span class="micro">Click a word to stress it · “I never said he ate the cake.”</span>
     <div class="tokens" id="stressToks" style="font-size:1.2rem"></div>
     <p class="box" id="stressOut" aria-live="polite"></p>
-    <p class="small">The source shows the same sentence changing meaning with emphasis; the paraphrased readings here are illustrative.</p>
+    <p class="small">The same sentence can change meaning with emphasis; the paraphrased readings here are illustrative.</p>
   </div>
   <h4>Transformer-based prosody prediction</h4>
   <ol class="clean">
@@ -1275,10 +1275,10 @@ Frame 3: [ -110.5, 43.9, 11.5, -2.9, 7.3, ... ]</pre>These vectors are the input
     <span class="micro">Editable grid · grayscale 7×7 (click cycles 0 → 128 → 255)</span>
     <div class="row" style="align-items:flex-start;gap:20px">
       <div class="pixgrid" id="pixGrid" style="grid-template-columns:repeat(7,30px)" aria-label="Pixel grid"></div>
-      <div><pre class="mat" id="pixMat"></pre><button class="btn ghost" id="pixReset">Reset to the source's square</button></div>
+      <div><pre class="mat" id="pixMat"></pre><button class="btn ghost" id="pixReset">Reset to the example square</button></div>
     </div>
   </div>
-  <p>Most digital images have <b>three layers — channels</b> — for <b>red, green and blue (RGB)</b>. The source's colour version: outer pixels R150 G0 B255 (<b>purple</b>); centre square R255 G255 B0 (<b>yellow</b>).</p>
+  <p>Most digital images have <b>three layers — channels</b> — for <b>red, green and blue (RGB)</b>. Colour version: outer pixels R150 G0 B255 (<b>purple</b>); centre square R255 G255 B0 (<b>yellow</b>).</p>
   <div class="widget" data-tabs>
     <span class="micro">Tabs · Inspect each channel</span>
     <div class="pills" role="tablist"><button class="pill" role="tab" data-tab="rgb">Composite</button><button class="pill" role="tab" data-tab="r">Red</button><button class="pill" role="tab" data-tab="g">Green</button><button class="pill" role="tab" data-tab="b">Blue</button></div>
@@ -1288,7 +1288,7 @@ Frame 3: [ -110.5, 43.9, 11.5, -2.9, 7.3, ... ]</pre>These vectors are the input
   <div class="widget">
     <span class="micro">Sliders · Mix one pixel</span>
     <div class="row"><label class="ctl">R <b id="mrV">150</b><input type="range" id="mr" min="0" max="255" value="150"></label><label class="ctl">G <b id="mgV">0</b><input type="range" id="mg" min="0" max="255" value="0"></label><label class="ctl">B <b id="mbV">255</b><input type="range" id="mb" min="0" max="255" value="255"></label><div id="mixSw" style="width:70px;height:70px;border:1px solid #1F2E2B;border-radius:14px 0 14px 0"></div></div>
-    <div class="row small"><button class="pill" data-mix="150,0,255">Purple (source)</button><button class="pill" data-mix="255,255,0">Yellow (source)</button></div>
+    <div class="row small"><button class="pill" data-mix="150,0,255">Purple</button><button class="pill" data-mix="255,255,0">Yellow</button></div>
   </div>
 </article>
 
@@ -1412,7 +1412,7 @@ Frame 3: [ -110.5, 43.9, 11.5, -2.9, 7.3, ... ]</pre>These vectors are the input
 <div class="srchead">
   
   <h2>Introduction to AI-powered information extraction concepts</h2>
-  <p class="lead">Extracting <b>structured data fields</b> from unstructured media — documents, images, and increasingly video and audio. This source focuses on documents and images; emerging solutions use speech recognition and other techniques for other media.</p>
+  <p class="lead">Extracting <b>structured data fields</b> from unstructured media — documents, images, and increasingly video and audio. This section focuses on documents and images; emerging solutions use speech recognition and other techniques for other media.</p>
   <a class="seealso" href="#s1-ie">See also: Information extraction overview</a>
 </div>
 
@@ -1446,7 +1446,7 @@ Frame 3: [ -110.5, 43.9, 11.5, -2.9, 7.3, ... ]</pre>These vectors are the input
         <tr data-rf="v"><th>Vendor</th><td>Fourth Coffee</td></tr><tr data-rf="d"><th>Date</th><td>2024-08-15</td></tr><tr data-rf="s"><th>Subtotal</th><td>$6.48</td></tr><tr data-rf="t"><th>Tax</th><td>$0.49</td></tr><tr data-rf="c"><th>Total claim</th><td>$6.97</td></tr>
       </tbody></table></div>
     </div>
-    <p class="small">Line-item names are illustrative; the extracted values are the source's.</p>
+    <p class="small">Line-item names are illustrative.</p>
   </div>
   <h4>Choosing the right approach</h4>
   <div class="widget">
@@ -1633,7 +1633,7 @@ Total: $1,023.00</textarea>
     <div class="row"><label class="ctl">Chunk size (sentences): <b id="chV">2</b><input type="range" id="ch" min="1" max="8" value="2"></label><button class="switch" role="switch" aria-checked="false" id="ovSw"><span class="trk"></span>Overlap by one sentence</button></div>
     <div id="chOut"></div>
     <p class="box small" id="chNote" aria-live="polite"></p>
-    <p class="small">Policy wording is illustrative; the four sections (flights, hotels, meals, ground transportation) are the source's.</p>
+    <p class="small">Policy wording is illustrative; the policy has four sections: flights, hotels, meals and ground transportation.</p>
   </div>
   <div class="grid2"><div class="box"><span class="micro">Too large</span><br>Irrelevant information; consumes more of the model's <b>context window</b>.</div><div class="box"><span class="micro">Too small</span><br>Separates a statement from headings, definitions or other context it needs.</div></div>
 </article>
@@ -1724,7 +1724,7 @@ Total: $1,023.00</textarea>
     <label class="ctl">Chunks retrieved per question: <b id="kV">4</b><input type="range" id="kR" min="1" max="20" value="4"></label>
     <div id="kBars"></div>
     <p class="small" id="kNote" aria-live="polite"></p>
-    <p class="small">Curves are illustrative of the source's trade-off.</p>
+    <p class="small">Curves are illustrative of the trade-off.</p>
   </div>
   <p><b>Monitor real usage</b> for unanswered questions, weak citations, slow searches and content-quality changes; re-evaluate whenever data, models, prompts or retrieval settings change.</p>
 </article>
@@ -1895,7 +1895,7 @@ const raiEx=[['An AI-powered college admissions system is tested to evaluate all
  ['A bank discloses its use of AI for loan approval and describes features of the training data (without revealing confidential information).',4]];
 $('#raiRows').innerHTML=raiEx.map((e,i)=>`<div class="box" style="margin:8px 0"><p style="margin:0 0 6px">${esc(e[0])}</p><div class="row"><select aria-label="Principle for example ${i+1}" data-rai="${i}"><option value="">Choose a principle…</option>${principles.map((p,j)=>`<option value="${j}">${p}</option>`).join('')}</select><span data-raires="${i}" class="small"></span></div></div>`).join('');
 $('#raiCheck').addEventListener('click',()=>{ let s=0; raiEx.forEach((e,i)=>{ const v=$(`[data-rai="${i}"]`).value; const ok=v!==''&&+v===e[1]; if(ok)s++; $(`[data-raires="${i}"]`).innerHTML=v===''?'—':ok?'<b style="color:var(--ok)">✓ Correct</b>':`<b style="color:var(--bad)">✗</b> It's <b>${principles[e[1]]}</b>`; });
-  $('#raiScore').textContent=`${s} / ${raiEx.length} correct. (Accountability has no example in the source — it's about governance frameworks.)`; });
+  $('#raiScore').textContent=`${s} / ${raiEx.length} correct. (Accountability has no single example — it's about governance frameworks.)`; });
 
 const objs=[['Mug',0.97],['Box',0.86],['Cable',0.72],['Shadow-shaped blob',0.55]];
 function robotR(){ const t=+$('#thr').value; $('#thrVal').textContent=t.toFixed(2);
@@ -1944,7 +1944,7 @@ const genSeq=['When','my','dog','was','a']; const genSteps=[[['puppy',0.72],['ca
 function genR(){ const seq=genSeq.concat(genSteps.slice(0,gi).map(s=>s[0][0]));
   $('#genToks').innerHTML=seq.map((w,i)=>`<span class="tok" ${i>=genSeq.length?'style="background:var(--sage)"':''}>${esc(w)}</span>`).join('');
   if(gi<genSteps.length){ bars($('#genBars'),genSteps[gi].map(c=>[esc(c[0]),c[1]])); $('#genStep').disabled=false; }
-  else { $('#genBars').innerHTML='<p class="small">The decoder predicted that the sequence has ended. (Probabilities illustrative; “puppy” over “cat” or “skateboard” is the source\'s example.)</p>'; $('#genStep').disabled=true; } }
+  else { $('#genBars').innerHTML='<p class="small">The decoder predicted that the sequence has ended. (Probabilities illustrative; “puppy” over “cat” or “skateboard” is the worked example.)</p>'; $('#genStep').disabled=true; } }
 $('#genStep').addEventListener('click',()=>{gi++;genR();}); $('#genReset').addEventListener('click',()=>{gi=0;genR();}); genR();
 
 function histR(v){ $('#histOut').innerHTML=v?'<b>With history:</b> the prompt contains the new question <em>plus</em> the previous prompts and responses, so the model understands the question in relation to <b>generative AI adoption</b>.':'<b>Without history:</b> the model sees only “What are common privacy-related risks?” — no link to generative AI adoption, so the answer can drift to privacy risks in general.'; }
@@ -2061,7 +2061,7 @@ function srR(){ const [k,note]=SR[+srEl.value]; $('#srVal').textContent=k+' kHz'
 srEl.addEventListener('input',srR); srR();
 
 const PH={42:[['/æ/',0.80],['/ɛ/',0.15],['other',0.05]],43:[['/t/',0.46],['/d/',0.39],['other',0.15]]};
-function phR(k){ bars($('#phBars'),PH[k],v=>Math.round(v*100)+'%'); $('#phNote').textContent=k==='42'?'The source\'s example: frame 42 shows 80% confidence for /æ/, 15% for /ɛ/, 5% for others.':'Illustrative ambiguous frame: attention over surrounding frames and the language model help resolve it.'; }
+function phR(k){ bars($('#phBars'),PH[k],v=>Math.round(v*100)+'%'); $('#phNote').textContent=k==='42'?'Worked example: frame 42 shows 80% confidence for /æ/, 15% for /ɛ/, 5% for others.':'Illustrative ambiguous frame: attention over surrounding frames and the language model help resolve it.'; }
 single('data-fr',phR); phR('42');
 const LM={stat:'<b>Statistical patterns:</b> “The weather is nice” appears more often in training data than “The whether is nice.” Likewise, context decides between “their” and “there”.',ctx:'<b>Context awareness:</b> after hearing “I need to,” the model expects verbs like “go” or “finish,” not nouns like “table.”',dom:'<b>Domain adaptation:</b> custom language models trained on medical or legal terminology improve accuracy for specialized scenarios.'};
 single('data-lm',k=>$('#lmOut').innerHTML=LM[k]); $('#lmOut').innerHTML=LM.stat;
@@ -2298,14 +2298,14 @@ const Q=[
   [['Both always produce valid dictionary words',0,'Lemmatization does; stemming just chops endings and may not.'],['Stemming maps “powering/powered/powerful” to “power”; lemmatization can\'t reduce words',0,'The first half is right, but lemmatization also reduces words — to a valid lemma.'],['Lemmatization uses linguistic rules and vocabulary to reach a valid base form; stemming strips endings',1,'Correct — e.g. “running” → “run”, “global” → “globe”.']]],
  ['Natural language processing','TextRank selects sentences 1, 3 and 5 of the cloud-computing document as its summary. This is:',
   [['Extractive summarization — a subset of the original text',1,'Correct — no new text is generated.'],['Abstractive summarization — new language summarizing key themes',0,'Abstractive summaries are generated by newer semantic models; TextRank picks existing sentences.'],['Keyword extraction',0,'TextRank can extract keywords at the word level, but ranking sentences produces a summary.']]],
- ['Natural language processing','Using the source\'s vectors, what does kitten − puppy + dog equal?',
+ ['Natural language processing','Using the example vectors, what does kitten − puppy + dog equal?',
   [['puppy',0,'puppy is dog + young; this calculation removes the “young” offset from kitten instead.'],['kitten',0,'It starts from kitten, but subtracting puppy and adding dog shifts the result.'],['cat',1,'Correct — [0.7, 0.5, 0.2]: puppy is to dog as kitten is to cat.']]],
  ['Speech','Which speech recognition stage turns the waveform into about 13 coefficients per 20–30 ms frame?',
   [['Audio capture',0,'Capture samples the signal (e.g. 16 kHz) into raw numbers; it doesn\'t compute coefficients.'],['Pre-processing (MFCC)',1,'Correct — frames, Fourier transform, Mel scale, then coefficients.'],['Acoustic modeling',0,'Acoustic models consume MFCC vectors to predict phonemes; they don\'t create them.']]],
  ['Speech','Which stage searches thousands of candidate word sequences to balance acoustic and language-model predictions?',
   [['Language modeling',0,'It supplies vocabulary and grammar knowledge the search uses, but isn\'t the search itself.'],['Post-processing',0,'Post-processing formats the chosen text (capitalization, numbers); it doesn\'t pick between hypotheses.'],['Decoding with beam search',1,'Correct — it keeps a beam of top hypotheses, extends them and prunes low scorers.']]],
  ['Speech','A synthesized voice pronounces every phoneme correctly but sounds robotic. The most likely cause is:',
-  [['Flat, monotone prosody',1,'Correct — the source says robotic speech usually comes from flat prosody, not phoneme errors.'],['A low vocoder sample rate',0,'Sample rate affects fidelity, but the source attributes robotic sound to prosody.'],['Skipping text normalization',0,'That would cause mispronounced symbols and digits, not robotic rhythm and intonation.']]],
+  [['Flat, monotone prosody',1,'Correct — robotic speech usually comes from flat prosody, not phoneme errors.'],['A low vocoder sample rate',0,'Sample rate affects fidelity, but robotic sound comes from prosody.'],['Skipping text normalization',0,'That would cause mispronounced symbols and digits, not robotic rhythm and intonation.']]],
  ['Computer vision','Convolving the kernel [−1 −1 −1 / −1 8 −1 / −1 −1 −1] across an image mainly:',
   [['Highlights the edges of shapes (a Laplace filter)',1,'Correct.'],['Blurs the image',0,'Other filters blur; this Laplace kernel highlights edges.'],['Classifies the image\'s main subject',0,'CNNs use filters to extract features, but a single filter doesn\'t predict a label.']]],
  ['Computer vision','A checkout must find each loose item and outline irregular produce precisely. Which technique fits best?',
