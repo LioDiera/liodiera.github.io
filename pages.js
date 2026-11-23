@@ -13,7 +13,7 @@ window.PAGES = [
     {
         "slug":  "ai901-part1",
         "title":  "AI-901 Study Path 1 — Interactive Guide",
-        "description":  "Seven sources, taught in order. Every section is tagged with the source it comes from, packed with things to click, slide and test — and closes with a 20-question final quiz and a coverage checklist.",
+        "description":  "Build a working understanding of how modern AI systems work: how they generate content and act as agents, and how they understand language, speech, images and documents, and ground their answers in your own data.",
         "tags":  [
                      "AI",
                      "AI-901"

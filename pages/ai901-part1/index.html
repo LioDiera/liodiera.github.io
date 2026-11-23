@@ -184,15 +184,15 @@ footer{max-width:1280px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);
 <header class="hero">
   <span class="micro">AI-901 · Learning path 1 · Interactive study guide</span>
   <h1>From AI concepts to retrieval-augmented generation</h1>
-  <p class="lead">Seven sources, taught in order. Every section is tagged with the source it comes from, packed with things to click, slide and test — and closes with a 20-question final quiz and a coverage checklist.</p>
-  <nav class="hero-grid" aria-label="Jump to source">
-    <a href="#s1"><b>Source 1</b><span>AI concepts</span></a>
-    <a href="#s2"><b>Source 2</b><span>Generative AI &amp; agents</span></a>
-    <a href="#s3"><b>Source 3</b><span>NLP</span></a>
-    <a href="#s4"><b>Source 4</b><span>Speech</span></a>
-    <a href="#s5"><b>Source 5</b><span>Computer vision</span></a>
-    <a href="#s6"><b>Source 6</b><span>Information extraction</span></a>
-    <a href="#s7"><b>Source 7</b><span>RAG</span></a>
+  <p class="lead">Build a working understanding of how modern AI systems work: how they generate content and act as agents, and how they understand language, speech, images and documents, and ground their answers in your own data.</p>
+  <nav class="hero-grid" aria-label="Jump to topic">
+    <a href="#s1"><b>AI concepts</b><span>Source 1</span></a>
+    <a href="#s2"><b>Generative AI &amp; agents</b><span>Source 2</span></a>
+    <a href="#s3"><b>Natural language processing</b><span>Source 3</span></a>
+    <a href="#s4"><b>Speech recognition &amp; synthesis</b><span>Source 4</span></a>
+    <a href="#s5"><b>Computer vision</b><span>Source 5</span></a>
+    <a href="#s6"><b>Information extraction</b><span>Source 6</span></a>
+    <a href="#s7"><b>Retrieval-augmented generation</b><span>Source 7</span></a>
   </nav>
 </header>
 
@@ -1748,7 +1748,7 @@ Total: $1,023.00</textarea>
 
 <!-- ===================== FINAL QUIZ ===================== -->
 <section class="source" id="quiz" data-title="Final quiz">
-<div class="srchead"><span class="tag">All sources</span><h2>Final quiz</h2><p class="lead">20 questions spanning all seven sources. Each wrong answer is partly true — read the feedback for every option.</p></div>
+<div class="srchead"><span class="tag">All topics</span><h2>Final quiz</h2><p class="lead">Test yourself on everything from AI fundamentals to retrieval-augmented generation. Each wrong answer is partly true, so read the feedback for every option.</p></div>
 <div class="card ivory">
   <div class="qmeta"><span class="micro" id="qCount">Question 1 of 20</span><span class="score">Score <i id="qScore">0</i> / 20</span></div>
   <div class="qdots" id="qDots" aria-hidden="true"></div>
@@ -1782,7 +1782,7 @@ Total: $1,023.00</textarea>
 </section>
 </main>
 </div>
-<footer>Built from the seven AI-901 learning-path sources in this project. Interactive illustrations marked “illustrative” are teaching aids; all concepts, definitions and data points come from the sources.</footer>
+<footer>All concepts, definitions and data points come from the AI-901 learning path. Interactive illustrations marked “illustrative” are teaching aids.</footer>
 
 <script>
 (function(){
@@ -2329,7 +2329,7 @@ function qGo(){ track.style.transform=`translateX(-${qi*100}%)`; $$('.qslide',tr
   $$('span',dots).forEach((d,i)=>{ d.className=res[i]===true?'r':res[i]===false?'w':i===qi?'cur':''; });
   if(qi<Q.length){ $('#qCount').textContent=`Question ${qi+1} of ${Q.length}`; $('#qNext').disabled=res[qi]===undefined; $('#qNext').textContent=qi===Q.length-1?'See results →':'Next →'; $('#qNext').hidden=false; $('#qHint').textContent=res[qi]===undefined?'Pick an answer to continue.':'Read the feedback for every option, then continue.'; }
   else { $('#qCount').textContent='Complete'; $('#qNext').hidden=true; $('#qHint').textContent=''; $('#qFinal').textContent=`${score} / ${Q.length}`;
-    $('#qMsg').textContent=score>=18?'Excellent — exam-ready on these sources.':score>=14?'Solid. Review the sources where you missed questions.':'Keep going — revisit the sections tagged below.';
+    $('#qMsg').textContent=score>=18?'Excellent — exam-ready on these topics.':score>=14?'Solid. Review the topics where you missed questions.':'Keep going — revisit the sections tagged below.';
     const by={}; Q.forEach((q,i)=>{ by[q[0]]=by[q[0]]||[0,0]; by[q[0]][1]++; if(res[i]) by[q[0]][0]++; }); $('#qBySrc').innerHTML=Object.entries(by).map(([k,v])=>`<span class="chip">${k}: ${v[0]}/${v[1]}</span>`).join(' ')+'<br><br>'; } }
 $$('.qslide',track).forEach((s,i)=>{ if(i>=Q.length) return; $$('[data-qo]',s).forEach(b=>b.addEventListener('click',()=>{ if(res[i]!==undefined) return; const j=+b.dataset.qo, ok=Q[i][2][j][1]===1; res[i]=ok; if(ok) score++;
   $$('[data-qo]',s).forEach((x,k)=>{ const c=Q[i][2][k][1]===1; if(c) x.classList.add('right'); else if(k===j) x.classList.add('wrong'); x.setAttribute('aria-disabled','true'); const f=$(`[data-qf="${k}"]`,s); f.hidden=false; f.innerHTML=`<b class="${c?'ok':'no'}">${c?'✓ Right:':'✗ Why not:'}</b> ${esc(Q[i][2][k][2])}`; });
