@@ -19,5 +19,15 @@ window.PAGES = [
                      "AI-901"
                  ],
         "date":  "2026-11-22"
+    },
+    {
+        "slug":  "running-a-registration-campaign",
+        "title":  "Running a registration campaign",
+        "description":  "",
+        "tags":  [
+                     "Passkey",
+                     "Entra ID"
+                 ],
+        "date":  "2026-11-23"
     }
 ];
