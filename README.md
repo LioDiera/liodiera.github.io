@@ -20,6 +20,14 @@ A home page for my interactive study guides, hosted on GitHub Pages at https://l
 
 Running it again with the same slug replaces that guide. Every guide gets a "Home" button at the top that links back to the home page. To add or refresh that button on guides already in `pages/`, run `.\add-page.ps1 -AddHomeLinkToAll`.
 
+## Remove a guide
+1. From the repo root, run the script with the guide's slug (run it with no slug to list them):
+   ```powershell
+   .\remove-page.ps1 networking-101
+   ```
+   It asks before deleting the guide's folder and its home page entry. Add `-WhatIf` to preview without changing anything.
+2. Commit and push. Until you commit, `git restore pages pages.js` brings the guide back.
+
 ## Files
 - `index.html`: home page
 - `pages.js`: list of guides
