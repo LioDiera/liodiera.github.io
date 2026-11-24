@@ -23,16 +23,6 @@ window.PAGES = [
     {
         "slug":  "running-a-registration-campaign",
         "title":  "Running a registration campaign",
-        "description":  "",
-        "tags":  [
-                     "Passkey",
-                     "Entra ID"
-                 ],
-        "date":  "2026-11-23"
-    },
-    {
-        "slug":  "running-a-registration-campaign",
-        "title":  "Running a registration campaign",
         "description":  "By the end, you\u0027ll understand how Microsoft Entra ID nudges users after multifactor authentication to register a passkey or Microsoft Authenticator: who is eligible, how each campaign state and snooze setting behaves, how passkey nudges are evaluated per platform, how to configure the policy in the admin center or Graph, and why a given user might not see a nudge.",
         "tags":  [
                      "Passkey",

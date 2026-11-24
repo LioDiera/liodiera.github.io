@@ -96,7 +96,8 @@ if ($html -match 'src="images/' -and (Test-Path $srcImages)) {
 # Update manifest (pages.js = "window.PAGES = <json>;")
 $raw = [IO.File]::ReadAllText($manifest)
 $json = ($raw -replace '^\s*window\.PAGES\s*=\s*', '') -replace ';\s*$', ''
-$list = @(ConvertFrom-Json $json) | Where-Object { $_.slug -ne $Slug }
+# Parentheses unroll the array: Windows PowerShell 5.1 emits it as a single object otherwise
+$list = @((ConvertFrom-Json $json) | Where-Object { $_.slug -ne $Slug })
 
 $entry = [ordered]@{
     slug        = $Slug
