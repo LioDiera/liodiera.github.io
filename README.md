@@ -18,7 +18,7 @@ A home page for my interactive study guides, hosted on GitHub Pages at https://l
 | `-Slug` | made from the title; becomes the URL `/pages/<slug>/` |
 | `-Color` | cover background, e.g. `#E9CD92` |
 
-Running it again with the same slug replaces that guide.
+Running it again with the same slug replaces that guide. Every guide gets a "Home" button at the top that links back to the home page. To add or refresh that button on guides already in `pages/`, run `.\add-page.ps1 -AddHomeLinkToAll`.
 
 ## Files
 - `index.html`: home page
